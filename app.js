@@ -30,7 +30,7 @@ app.post("/", function(req, res){
     const url = "https://us8.api.mailchimp.com/3.0/lists/93b7251f4d"
     const options = {
         method: "POST",
-        auth: "khalid1:06ca0c2820d2109c73bb7437bbaa60cb-us8"
+        auth: "*** apiKey "
     }
 
     const myRequest = https.request(url, options, function(response){
@@ -60,9 +60,3 @@ app.get("/", function(req, res){
 app.listen(process.env.PORT || 3000, function(req, res){
     console.log("server is running on port 3000");
 })
-
-// 06ca0c2820d2109c73bb7437bbaa60cb-us8
-
-// 93b7251f4d
-
-// add reverse rotation of the icon on click
